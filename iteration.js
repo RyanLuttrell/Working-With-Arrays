@@ -238,4 +238,48 @@
 
 // console.log(books)
 
+// const customers = [
+//       {
+//         name: "Tyrone",
+//         personal: {
+//           age: 33,
+//           hobbies: ["Bicycling", "Camping"]
+//         }
+//       },
+//       {
+//         name: "Elizabeth",
+//         personal: {
+//           age: 25,
+//           hobbies: ["Guitar", "Reading", "Gardening"]
+//         }
+//       },
+//       {
+//         name: "Penny",
+//         personal: {
+//           age: 36,
+//           hobbies: ["Comics", "Chess", "Legos"]
+//         }
+//       }
+//     ];
+//     let hobbies;
+    
+//     // hobbies should be: ["Bicycling", "Camping", "Guitar", "Reading", "Gardening", "Comics", "Chess", "Legos"]
+//     // Write your code below
+    
+//     hobbies = customers.map(customer => customer.personal.hobbies).reduce((arr, hobbies) => [...arr, ...hobbies], []);
+
+//     console.log(hobbies)
+
+// const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// let dayAbbreviations = [];
+
+// dayAbbreviations should be: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']
+// Write your code below
+
+// dayAbbreviations = days.forEach(day => {
+//       const shortDay = days[0].substring(0,2);
+//       shortDay.push(dayAbbreviations);
+// });
+
+// console.log(shortDay)
 

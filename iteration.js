@@ -150,43 +150,90 @@
 
 // console.log(total);
 
-const purchaseItems = [
-    {
-        name: 'apples',
-        dept: 'groceries',
-        price: 2.49
-    },
-    {
-        name: 'bread',
-        dept: 'groceries',
-        price: 2.99
-    },
-    {
-        name: 'batteries',
-        dept: 'electronics',
-        price: 5.80
-    },
-    {
-        name: 'eggs',
-        dept: 'groceries',
-        price: 3.99
-    },
-    {
-        name: 't-shirts',
-        dept: 'apparel',
-        price: 9.99
-    }
-];
-let groceryTotal;
+// const purchaseItems = [
+//     {
+//         name: 'apples',
+//         dept: 'groceries',
+//         price: 2.49
+//     },
+//     {
+//         name: 'bread',
+//         dept: 'groceries',
+//         price: 2.99
+//     },
+//     {
+//         name: 'batteries',
+//         dept: 'electronics',
+//         price: 5.80
+//     },
+//     {
+//         name: 'eggs',
+//         dept: 'groceries',
+//         price: 3.99
+//     },
+//     {
+//         name: 't-shirts',
+//         dept: 'apparel',
+//         price: 9.99
+//     }
+// ];
+// let groceryTotal;
 
-// groceryTotal should be: 9.47
-// Write your code below
+// // groceryTotal should be: 9.47
+// // Write your code below
 
-groceryTotal = purchaseItems
-  .filter(item => item.dept === 'groceries')
-  .reduce((total, item) => {
-    total += item.price;
-    return total;
-  });
+// groceryTotal = purchaseItems
+//   .filter(item => item.dept === 'groceries')
+//   .reduce((total, item) => {
+//     total += item.price;
+//     return total;
+//   });
 
-console.log(groceryTotal);
+// console.log(groceryTotal);
+
+// const movies = [
+//     ['The Day the Earth Stood Still', 'Superman', 'Ghostbusters'],
+//     ['Finding Dory'],
+//     ['Jaws', 'On the Waterfront']
+//   ]
+  
+// const flatMovies = movies.reduce((arr, innerMovies) => [...arr, ...innerMovies], []);
+
+// console.log(flatMovies)
+
+      // Result: ['The Day the Earth Stood Still', 'Superman', 'Ghostbusters', 'Finding Dory', 'Jaws', 'On the Waterfront']
+
+    //   const users = [
+    //     {
+    //       name: 'Samir',
+    //       age: 27,
+    //       favoriteBooks:[
+    //         {title: 'The Iliad'},
+    //         {title: 'The Brothers Karamazov'}
+    //       ]
+    //     },
+    //     {
+    //       name: 'Angela',
+    //       age: 33,
+    //       favoriteBooks:[
+    //         {title: 'Tenth of December'},
+    //         {title: 'Cloud Atlas'},
+    //         {title: 'One Hundred Years of Solitude'}
+    //       ]
+    //     },
+    //     {
+    //       name: 'Beatrice',
+    //       age: 42,
+    //       favoriteBooks:[
+    //         {title: 'Candide'}
+    //       ]
+    //     }
+    //   ];
+      
+          // Result: ['The Iliad', 'The Brothers Karamazov', 'Tenth of December', 'Cloud Atlas', 'One Hundred Years of Solitude', 'Candide'];
+
+// const books = users
+//     .map(user => user.favoriteBooks.map(book => book.title))
+//     .reduce((arr, titles) => [...arr, ...titles], []);
+
+// console.log(books)

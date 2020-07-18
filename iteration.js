@@ -283,3 +283,16 @@
 
 // console.log(shortDay)
 
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+let noel = [];
+
+// noel should be: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+// Write your code below
+
+alphabet.forEach(letter => {
+  if (letter !== 'L') {
+    letter.push(noel);
+  }
+});
+
+console.log(noel);
